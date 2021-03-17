@@ -6,7 +6,8 @@ package auto_radnja.gume;
  * 	atribute: precnik, sirina i visina koji su tipa integer.
  *  
  * @author danko
- *
+ * 
+ * @version 0.1
  */
 public class AutoGuma {
 	/**
