@@ -89,11 +89,10 @@ public class AutoGuma {
 	 * 
 	 * @param precnik Precnik gume kao integer
 	 * 
-	 * @throws java.lang.RuntimeException Ako je uneta vrednost za precnik manja od 13 i veca od 22 (ovaj if nikada nece
-	 * 	biti ispunjen... verovatno je namenska greska koja ce biti ispravljena testiranjem)
+	 * @throws java.lang.RuntimeException Ako je uneta vrednost za precnik manja od 13 ili veca od 22
 	 */
 	public void setPrecnik(int precnik) {
-		if (precnik < 13 && precnik > 22)
+		if (precnik < 13 || precnik > 22)
 			throw new RuntimeException("Precnik van opsega");
 		this.precnik = precnik;
 	}
@@ -112,10 +111,10 @@ public class AutoGuma {
 	 * 
 	 * @param sirina Sirina gume kao integer
 	 * 
-	 * @throws java.lang.RuntimeException Ako je uneta vrednost za sirinu manja od 135 i veca od 355 (ista greska kao za precnik)
+	 * @throws java.lang.RuntimeException Ako je uneta vrednost za sirinu manja od 135 i veca od 355
 	 */
 	public void setSirina(int sirina) {
-		if (sirina < 135 && sirina > 355)
+		if (sirina < 135 || sirina > 355)
 			throw new RuntimeException("Sirina van opsega");
 		this.sirina = sirina;
 	}
